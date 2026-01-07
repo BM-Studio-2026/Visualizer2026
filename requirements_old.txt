@@ -4,3 +4,5 @@ plotly
 matplotlib
 pillow
 streamlit-plotly-events
+imageio-ffmpeg
+imageio

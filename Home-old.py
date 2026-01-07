@@ -1,15 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Home page for Linear Transformation Playground (GIF version)
+Created on Tue Jan  6 13:07:51 2026
 
-Assumes all GIF files are stored in a subfolder named: videos/
-
-Expected files:
-  videos/SVD2x2Demo.gif
-  videos/SVD3x3Demo.gif
-  videos/SVD2x3ProjectionDemo.gif
-  videos/SVD3x2LiftingDemo.gif
+@author: Brayden Miao
 """
+
+
+
+# Home page for Linear Transformation Playground
 
 import base64
 from pathlib import Path
@@ -18,35 +16,35 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 
-st.set_page_config(page_title="Linear Transformation Playground", layout="wide")
+st.set_page_config(
+    page_title="Linear Transformation Playground",
+    layout="wide"
+)
+
 st.title("Linear Transformation Playground")
 
 st.write(
     """
     Created by Brayden Miao
-
-    January, 2026
-
+    
+    Janunary, 2026
+    
     Choose a visualization mode:
 
     - **2D Transform**: random points in the plane, 2×2 matrix, eigenvectors, SVD cartoon.
-    - **3D Transform**: random points + cube in 3D, 3×3 matrix, eigenvectors, 3D SVD path + GIF.
+    - **3D Transform**: random points + cube in 3D, 3×3 matrix, eigenvectors, 3D SVD path + GIF/MP4.
     - **2×3 Projection**: 2×3 matrix mapping 3D points onto a tilted 2D plane using SVD, with cartoon + GIF.
     - **3×2 Lifting**: 3×2 matrix mapping 2D points into 3D space using SVD, with cartoon + GIF.
     """
 )
 
-BASE_DIR = Path(__file__).parent
-VIDEOS_DIR = BASE_DIR / "videos"
-
-
 # ----------------------------
-# Caching helper (GIF)
+# Caching helper (key change)
 # ----------------------------
 @st.cache_data(show_spinner=False)
-def load_gif_b64(path_str: str, file_mtime: float) -> str:
+def load_video_b64(path_str: str, file_mtime: float) -> str:
     """
-    Read a local GIF and return base64 string.
+    Read a local MP4 and return base64 string.
     Cached across Streamlit reruns. Cache invalidates automatically when the file changes
     because we include file_mtime in the cache key.
     """
@@ -54,18 +52,24 @@ def load_gif_b64(path_str: str, file_mtime: float) -> str:
         return base64.b64encode(f.read()).decode("utf-8")
 
 
-def autoplay_gif_panel(gif_path: Path, title: str, height: int = 400) -> None:
+def autoplay_video_panel(video_path: Path, title: str, height: int = 400) -> None:
     """
-    Render a looping GIF using a base64 data URL inside an <img>.
+    Render an autoplay/muted/loop video using base64 data URL.
     Uses cached base64 so reruns don't re-encode.
     """
-    if gif_path.exists():
+    if video_path.exists():
         st.markdown(title)
-        b64 = load_gif_b64(str(gif_path), gif_path.stat().st_mtime)
-        gif_html = f'<img src="data:image/gif;base64,{b64}" style="width: 100%; height: auto;" />'
-        components.html(gif_html, height=height)
+        b64 = load_video_b64(str(video_path), video_path.stat().st_mtime)
+
+        video_html = f"""
+        <video width="100%" autoplay muted loop playsinline>
+            <source src="data:video/mp4;base64,{b64}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        """
+        components.html(video_html, height=height)
     else:
-        st.info(f"{gif_path.as_posix()} not found.")
+        st.info(f"{video_path.name} not found in the app folder.")
 
 
 # First row: 2D & 3D
@@ -82,10 +86,10 @@ with col1:
     if st.button("Go to 2D Transform"):
         st.switch_page("pages/1_2D_Transform.py")
 
-    autoplay_gif_panel(
-        VIDEOS_DIR / "SVD2x2Demo.gif",
+    autoplay_video_panel(
+        Path(__file__).parent / "SVD2x2Demo.mp4",
         "##### 2D SVD demo (auto-playing)",
-        height=400,
+        height=400
     )
 
 with col2:
@@ -99,10 +103,10 @@ with col2:
     if st.button("Go to 3D Transform"):
         st.switch_page("pages/2_3D_Transform.py")
 
-    autoplay_gif_panel(
-        VIDEOS_DIR / "SVD3x3Demo.gif",
+    autoplay_video_panel(
+        Path(__file__).parent / "SVD3x3Demo.mp4",
         "##### 3D SVD demo (auto-playing)",
-        height=400,
+        height=400
     )
 
 st.markdown("---")
@@ -122,10 +126,10 @@ with col3:
     if st.button("Go to 2×3 Projection"):
         st.switch_page("pages/3_2x3_Projection.py")
 
-    autoplay_gif_panel(
-        VIDEOS_DIR / "SVD2x3ProjectionDemo.gif",
+    autoplay_video_panel(
+        Path(__file__).parent / "SVD2x3ProjectionDemo.mp4",
         "##### 2x3 Matrix SVD demo (auto-playing)",
-        height=400,
+        height=400
     )
 
 with col4:
@@ -140,8 +144,8 @@ with col4:
     if st.button("Go to 3×2 Lifting"):
         st.switch_page("pages/4_3x2_Lifting.py")
 
-    autoplay_gif_panel(
-        VIDEOS_DIR / "SVD3x2LiftingDemo.gif",
+    autoplay_video_panel(
+        Path(__file__).parent / "SVD3x2LiftingDemo.mp4",
         "##### 3x2 Matrix SVD demo (auto-playing)",
-        height=400,
+        height=400
     )
