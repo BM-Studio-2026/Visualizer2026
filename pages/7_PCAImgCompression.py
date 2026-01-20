@@ -199,7 +199,7 @@ with st.sidebar:
 
         st.divider()
         st.subheader("Loading")
-        max_imgs = st.slider("Max images to load", 20, 2000, 400, 10)
+        max_imgs = st.slider("Max images to load", 20, 200, 100, 10)
         seed = st.number_input("Shuffle seed", value=7, step=1)
         shuffle = st.checkbox("Shuffle images", value=True)
 
