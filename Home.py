@@ -129,6 +129,11 @@ with col5:
     )
     if st.button("Go to PCA Demo", key="h2_pca"):
         st.switch_page("pages/5_PCA_Demo.py")
+    autoplay_gif_panel(
+        VIDEOS_DIR / "PCACartoon2D.gif",
+        "##### PCA demo (auto-playing)",
+        height=400,
+    )
 
 with col6:
     st.subheader("SVD Image Compression")
@@ -140,6 +145,11 @@ with col6:
     )
     if st.button("Go to SVD Image Compression", key="h2_svd_img"):
         st.switch_page("pages/6_SVDImgCompression.py")
+    autoplay_gif_panel(
+        VIDEOS_DIR / "SVD_Img.gif",
+        "##### SVD Image Reconstrction (auto-playing)",
+        height=400,
+    )
 
 st.markdown("---")
 
@@ -158,6 +168,11 @@ with col7:
     )
     if st.button("Go to PCA Image Compression", key="h2_pca_img"):
         st.switch_page("pages/7_PCAImgCompression.py")
+    autoplay_gif_panel(
+        VIDEOS_DIR / "PCAFacesDemo.gif",
+        "##### PCA Faces Reconstrction (auto-playing)",
+        height=400,
+    )
 
 with col8:
     st.empty()
