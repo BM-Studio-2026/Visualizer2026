@@ -154,7 +154,7 @@ with col6:
 st.markdown("---")
 
 # ============================================================
-# Row 4: PCA Image Compression
+# Row 4: PCA Image Compression & Least Squares (LSE)
 # ============================================================
 col7, col8 = st.columns(2)
 
@@ -175,4 +175,17 @@ with col7:
     )
 
 with col8:
-    st.empty()
+    st.subheader("Least Squares (LSE)")
+    st.write(
+        """
+        3D least squares demo:
+        planes (equations), intersections, LS point, and residuals.
+        """
+    )
+    if st.button("Go to Least Squares (LSE)", key="h2_lse"):
+        st.switch_page("pages/8_LSE.py")
+    autoplay_gif_panel(
+        VIDEOS_DIR / "LSE3D_Demo.gif",
+        "##### LSE 3D Demo (auto-playing)",
+        height=400,
+    )
