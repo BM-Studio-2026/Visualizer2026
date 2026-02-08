@@ -15,17 +15,33 @@ import streamlit.components.v1 as components
 # Page config
 # ----------------------------
 st.set_page_config(page_title="Linear Transformation Playground", layout="wide")
-st.title("Linear Transformation Playground (Extended)")
+st.title("Seeing Linear Algebra: An Interactive Journey from Data to Geometry")
 
-st.write(
+st.markdown(
     """
-    Created by BM Studio  
-
-    January, 2026  
-
-    Choose a visualization mode:
-    """
+    <div style="font-size:32px; font-weight:650; margin-top:-10px; margin-left: 200px">
+              -- Linear Transformation Playground
+    </div>
+    """,
+    unsafe_allow_html=True,
 )
+
+st.markdown(
+    """
+    <div style="margin-top:10px; margin-left:200px; font-size:22px; line-height:1.6;">
+        <div style="font-weight:600;">Created by BM Studio</div>
+        <div>January, 2026</div>
+        <hr style="
+            margin-top:12px;
+            width:420px;
+            border:0;
+            border-top:2px solid #ccc;
+        ">
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 BASE_DIR = Path(__file__).parent
 VIDEOS_DIR = BASE_DIR / "videos"
