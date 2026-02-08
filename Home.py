@@ -10,7 +10,7 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
-
+LOGO_PATH = Path("videos/BM_Logo.png")  
 # ----------------------------
 # Page config
 # ----------------------------
@@ -26,23 +26,24 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown(
-    """
-    <div style="margin-top:10px; margin-left:200px; font-size:22px; line-height:1.6;">
-        <div style="font-weight:600;">Created by BM Studio</div>
-        <div>January, 2026</div>
-        <hr style="
-            margin-top:12px;
-            width:420px;
-            border:0;
-            border-top:2px solid #ccc;
-        ">
-    </div>
-    """,
-    unsafe_allow_html=True,
-)
+col_text, col_logo = st.columns([6, 1])  # adjust ratio if needed
 
+with col_text:
+    st.markdown(
+        """
+        <div style="margin-top:20px; margin-left:250px; font-size:22px; line-height:1.6;">
+            <div style="font-weight:600;">Created by BM Studio</div>
+            <div>January, 2026</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
+with col_logo:
+    st.markdown("<div style='padding-left:200px;'>", unsafe_allow_html=True)
+    st.image(LOGO_PATH, width=120)
+    st.markdown("</div>", unsafe_allow_html=True)
+    
 BASE_DIR = Path(__file__).parent
 VIDEOS_DIR = BASE_DIR / "videos"
 
