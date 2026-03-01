@@ -90,6 +90,7 @@ By integrating 2D and 3D transformations, SVD, PCA, least squares estimation, an
 - NumPy
 - Matplotlib or Plotly
 - PIL (Image Processing)
+- Manim (Mathematical Animation Engine, originally developed by 3Blue1Brown)
 
 ---
 
