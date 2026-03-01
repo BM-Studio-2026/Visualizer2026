@@ -372,7 +372,7 @@ with tabs[0]:
         angle = st.slider("Tilt angle (degrees)", 0, 89, 45, 1)
         scale_major = st.slider("Major axis scale", 0.5, 6.0, 3.0, 0.1)
         scale_minor = st.slider("Minor axis scale", 0.1, 3.0, 0.8, 0.1)
-        noise = st.slider("Noise", 0.0, 1.5, 0.25, 0.05)
+        noise = st.slider("Noise", 0.0, 1.5, 0.50, 0.1)
         seed = st.number_input("Seed", value=7, step=1)
 
         st.divider()
@@ -424,13 +424,13 @@ with tabs[1]:
 
     with left:
         st.subheader("3D data")
-        n3 = st.slider("Number of points", 80, 2000, 700, 20)
+        n3 = st.slider("Number of points", 80, 2000, 200, 20)
         tilt_x = st.slider("Tilt about x-axis (deg)", 0, 89, 25, 1)
         tilt_y = st.slider("Tilt about y-axis (deg)", 0, 89, 35, 1)
         scale1 = st.slider("Spread along direction 1", 0.5, 8.0, 4.0, 0.1)
         scale2 = st.slider("Spread along direction 2", 0.5, 8.0, 2.5, 0.1)
-        thickness = st.slider("Thickness (small variance axis)", 0.01, 2.0, 0.25, 0.01)
-        noise3 = st.slider("Noise", 0.0, 1.5, 0.15, 0.05)
+        thickness = st.slider("Thickness (small variance axis)", 0.01, 2.0, 1.5, 0.01)
+        noise3 = st.slider("Noise", 0.0, 1.5, 0.85, 0.05)
         seed3 = st.number_input("Seed", value=11, step=1, key="seed3")
 
         st.divider()

@@ -688,7 +688,7 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.header("3×2 transformation matrix A")
 
-    mode = st.sidebar.radio("Define A by:", ["Preset: simple embedding", "Manual 3×2 entries"])
+    mode = st.sidebar.radio("Define A by:", ["Preset: simple embedding", "Manual 3×2 entries"], index=1)
 
     if mode == "Preset: simple embedding":
         A = np.array([[1.0, 0.0],

@@ -841,6 +841,7 @@ $(x,y,z)$ via $V^T$.
     mode = st.sidebar.radio(
         "Define A by:",
         ["Preset: projection to xy-plane", "Manual 2×3 entries"],
+        index=1
     )
 
     if mode == "Preset: projection to xy-plane":
