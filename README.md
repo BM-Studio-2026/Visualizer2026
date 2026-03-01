@@ -8,11 +8,13 @@ Linear algebra underlies modern machine learning, computer vision, medical imagi
 ---
 
 ## Live Demo
-
-http://bit.ly/Visualizer2026
-or
+```
+Primary link:  
 https://visualizer2026-consm2v7nnfpbvynupexca.streamlit.app
----
+
+Short link:  
+http://bit.ly/Visualizer2026
+```
 
 ## Features
 
