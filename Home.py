@@ -20,11 +20,12 @@ st.title("Seeing Linear Algebra: An Interactive Journey from Data to Geometry")
 st.markdown(
     """
     <div style="font-size:32px; font-weight:650; margin-top:-10px; margin-left: 200px">
-              -- Linear Transformation Playground
+              -- Interactive Linear Algebra Visualizer
     </div>
     """,
     unsafe_allow_html=True,
 )
+
 
 col_text, col_logo = st.columns([6, 1])  # adjust ratio if needed
 
@@ -43,6 +44,21 @@ with col_logo:
     st.markdown("<div style='padding-left:200px;'>", unsafe_allow_html=True)
     st.image(LOGO_PATH, width=120)
     st.markdown("</div>", unsafe_allow_html=True)
+    
+    
+st.markdown("""
+### About This Tool
+
+This interactive linear algebra visualizer demonstrates:
+- 2D and 3D matrix transformations
+- Singular Value Decomposition (SVD)
+- Principal Component Analysis (PCA)
+- Projection and lifting between dimensions
+- Image compression using SVD and PCA
+- Least Square Estimation (LSE)
+
+Designed for students learning linear algebra, machine learning, and data science.
+""")
     
 BASE_DIR = Path(__file__).parent
 VIDEOS_DIR = BASE_DIR / "videos"
@@ -206,3 +222,4 @@ with col8:
         "##### LSE 3D Demo (auto-playing)",
         height=400,
     )
+    
