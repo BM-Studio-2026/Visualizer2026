@@ -118,10 +118,8 @@ Visualizer2026/
 
 ## Author
 
-Brayden Miao   
-(BM Studio)   
-High School Research Project (2026)    
----
+**Brayden Miao**  
+BM Studio · High School Research Project (2026)
 
 ## License
 
