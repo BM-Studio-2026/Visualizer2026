@@ -93,14 +93,14 @@ By integrating 2D and 3D transformations, SVD, PCA, least squares estimation, an
 - Manim (Mathematical Animation Engine, originally developed by 3Blue1Brown)
 
 ---
-
 ## Project Structure
-Home.py # Main application entry
-pages/ # Multi page interactive modules
-assets/ # Images and visual assets
-requirements.txt # Dependencies
-README.md # Project overview
 
+https://github.com/BM-Studio-2026/Visualizer2026/
+├── Home.py # Main application entry
+├── pages/ # Multi-page interactive modules
+├── assets/ # Images and visual assets
+├── requirements.txt # Dependencies
+└── README.md # Project overview
 
 ---
 
