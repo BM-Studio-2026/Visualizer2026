@@ -105,12 +105,8 @@ README.md # Project overview
 
 ## Future Development
 
-- Eigenvalue and eigenvector visualization module
-- Condition number explorer
-- More least squares examples (polynomial fitting, robust regression)
-- Interactive basis change animation
 - Educational lesson integration
-- Additional machine learning demonstrations
+- Additional machine learning algorithm demonstrations
 
 ---
 
