@@ -223,27 +223,3 @@ with col8:
         height=400,
     )
     
-# ============================================================
-# Visitor Map
-# ============================================================
-st.markdown("---")
-st.subheader("Visitor Map")
-st.write("See where visitors to this app are coming from.")
-
-visitor_map_html = """
-<div style="display:flex; justify-content:center; align-items:center; margin: 10px 0 20px 0;">
-    <iframe
-        src="https://s05.flagcounter.com/map/uX01/size_s/txt_000000/border_CCCCCC/pageviews_1/viewers_0/flags_0/"
-        width="500"
-        height="300"
-        style="border:none;"
-        scrolling="no">
-    </iframe>
-</div>
-<p style="text-align:center; color:gray; font-size:13px;">
-    Visitor counts and locations are approximate.
-</p>
-"""
-components.html(visitor_map_html, height=400)
-
-
