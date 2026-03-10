@@ -34,7 +34,7 @@ with col_text:
         """
         <div style="margin-top:20px; margin-left:250px; font-size:22px; line-height:1.6;">
             <div style="font-weight:600;">Created by Brayden Miao (BM Studio)</div>
-            <div style="margin-left:40px;">  January, 2026</div>
+            <div style="margin-left:40px;">  March, 2026 (V2)</div>
         </div>
         """,
         unsafe_allow_html=True,
