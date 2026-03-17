@@ -8,11 +8,11 @@ Linear algebra underlies modern machine learning, computer vision, medical imagi
 ---
 
 ## Live Demo
-Primary link:  
-https://visualizer2026-consm2v7nnfpbvynupexca.streamlit.app
+## 🚀 Live Demo
 
-Short link:  
-http://bit.ly/Visualizer2026
+👉 **[Open Interactive Linear Algebra Visualizer](https://visualizer2026-consm2v7nnfpbvynupexca.streamlit.app)**
+
+📎 **[Short Link](http://bit.ly/Visualizer2026)**
 
 
 ## Features
@@ -106,7 +106,8 @@ Visualizer2026/
 ├── requirements.txt     # Dependencies
 └── README.md            # Project overview
 ```
-
+GitHub Repo: https://github.com/BM-Studio-2026/Visualizer2026
+GitHub Page: https://bm-studio-2026.github.io/Visualizer2026/
 ---
 
 ## Future Development
