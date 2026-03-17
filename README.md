@@ -1,9 +1,9 @@
-# Seeing Linear Algebra  
+# Linear Algebra Visualizer (2026) 
 ## An Interactive Visualization Platform for Matrix Transformations, SVD, PCA, and Least Squares (LSE)
 
 Linear algebra underlies modern machine learning, computer vision, medical imaging, and scientific computing. However, students often experience matrices as abstract symbolic procedures rather than geometric transformations.
 
-**Seeing Linear Algebra** is an interactive Streamlit based visualization platform designed to bridge algebraic computation and geometric intuition. Instead of treating matrices as static arrays of numbers, this system demonstrates how matrices act as geometric operators that rotate, scale, project, compress, and transform data in real time.
+**Linear Algebra Visualizer** is an interactive Streamlit based visualization platform designed to bridge algebraic computation and geometric intuition. Instead of treating matrices as static arrays of numbers, this system demonstrates how matrices act as geometric operators that rotate, scale, project, compress, and transform data in real time.
 
 ---
 
