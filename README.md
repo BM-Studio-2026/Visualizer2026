@@ -106,9 +106,9 @@ Visualizer2026/
 ├── requirements.txt     # Dependencies
 └── README.md            # Project overview
 ```
-GitHub Repo: https://github.com/BM-Studio-2026/Visualizer2026
+GitHub Repo: [Quick Access](https://github.com/BM-Studio-2026/Visualizer2026)
 
-GitHub Page: https://bm-studio-2026.github.io/Visualizer2026/
+GitHub Page: [Quick Access](https://bm-studio-2026.github.io/Visualizer2026/)
 
 ---
 
