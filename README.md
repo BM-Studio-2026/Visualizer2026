@@ -108,6 +108,7 @@ Visualizer2026/
 ```
 GitHub Repo: https://github.com/BM-Studio-2026/Visualizer2026
 GitHub Page: https://bm-studio-2026.github.io/Visualizer2026/
+
 ---
 
 ## Future Development
