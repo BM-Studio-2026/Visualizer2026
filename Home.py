@@ -10,6 +10,13 @@ from pathlib import Path
 import streamlit as st
 import streamlit.components.v1 as components
 
+st.markdown(
+    """
+    <meta name="google-site-verification" content="8SxGZI_P4Z2GvLa6Sm_MNW3uJJXfHvKNMsegkjj1YQ8" />
+    """,
+    unsafe_allow_html=True
+)
+
 LOGO_PATH = Path("videos/BM_Logo.png")  
 # ----------------------------
 # Page config
