@@ -3,7 +3,7 @@ layout: default
 title: Linear Algebra Visualizer (2026)
 ---
 
-## Linear Algebra Visualizer (2026)
+# **Linear Algebra Visualizer (2026)**
 
 ### An Interactive Visualization Platform for Matrix Transformations, SVD, PCA, and Least Squares (LSE)
 
