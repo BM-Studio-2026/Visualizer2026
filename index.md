@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Linear Algebra Visualizer (2026)
+description: Interactive platform for visualizing matrix transformations, SVD, PCA, and least squares
 ---
 
 # **Linear Algebra Visualizer (2026)**
@@ -94,6 +95,8 @@ Modern AI systems rely heavily on linear algebra. From neural networks to medica
 
 By integrating 2D and 3D transformations, SVD, PCA, least squares estimation, and image compression into a unified interactive environment, this project transforms linear algebra from symbolic manipulation into geometric experience.
 
+This work further extends into immersive VR environments, enabling users to experience linear algebra concepts spatially rather than symbolically.
+
 ---
 
 ## Technologies Used
@@ -122,6 +125,27 @@ Visualizer2026/
 
 ---
 
+## 🥽 VR Extension: Linear Algebra in Immersive Space
+
+Experience linear algebra beyond the screen. The **Linear Algebra Visualizer VR Project** extends the platform into an interactive WebXR environment, allowing users to explore vectors, transformations, and geometric structures in 3D immersive space.
+
+Instead of observing transformations, users can **walk through them**, manipulate objects directly, and develop spatial intuition in a fully interactive environment.
+
+### 🔗 Access the VR Project
+
+- 🧠 **[Linear Algebra Visualizer VR Project (Info Page)](https://bm-studio-2026.github.io/Visualizer2026-WebXR/index.html)**  
+- 🚀 **[Launch VR Live Demo (WebXR)](https://bm-studio-2026.github.io/Visualizer2026-WebXR/vr.html)**  
+
+### ✨ Key Highlights
+
+- Real-time 3D vector and matrix interaction  
+- Immersive exploration of transformations  
+- WebXR support (Meta Quest / VR browsers)  
+- Intuitive spatial understanding of abstract concepts  
+
+💡 *This VR module represents the next step toward making mathematics fully experiential and interactive.*
+
+---
 ## Future Development
 
 - Educational lesson integration  

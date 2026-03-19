@@ -1,2 +1,7 @@
 theme: minima
 markdown: kramdown
+
+title: "Linear Algebra Visualizer (2026)"
+description: "Interactive Streamlit-based platform for visualizing linear algebra concepts including matrix transformations, SVD, PCA, least squares, and image compression."
+url: "https://bm-studio-2026.github.io"
+baseurl: "/Visualizer2026"
