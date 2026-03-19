@@ -129,7 +129,7 @@ Visualizer2026/
 
 Experience linear algebra beyond the screen. The **Linear Algebra Visualizer VR Project** extends the platform into an interactive WebXR environment, allowing users to explore vectors, transformations, and geometric structures in 3D immersive space.
 
-Instead of observing transformations, users can **walk through them**, manipulate objects directly, and develop spatial intuition in a fully interactive environment.
+Instead of observing transformations, users can walk through them, manipulate objects directly, and develop spatial intuition in a fully interactive environment.
 
 ### 🔗 Access the VR Project
 
